@@ -80,24 +80,15 @@ hr {
     border-top: 1px solid black;
 }
 
-.thumbnail {
-    height: 175px;
-    width: 175px;
+.shop_button {
+    position: fixed;
+    left: 90vw;
+    top: 90vh;
 }
 
-.center_img {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+a:hover {
+    color: rgb(65, 195, 255);
 }
-
-.mb_imgs {
-    display: none;
-}
-
-
-
-
 
 @media only screen and (max-width: 768px) {
     .parallax-section {
@@ -106,10 +97,9 @@ hr {
     .special_br {
         display: none;
     }
-    .sample_imgs {
-        display: none;
+
+    .shop_button {
+        left: 65vw;
     }
-    .mb_imgs {
-        display: block;
-    }
+    
 }
