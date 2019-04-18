@@ -6,12 +6,7 @@ body, html {
     height: 100%;
   }
 
-.parallax { 
-    /* The image used */
-    background-image: url("cover-photo.jpg");
-  
-    /* Full height */
-    height: 100vh; 
+.parallax {  
   
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -45,9 +40,76 @@ h1 {
 }
 
 .nav_row {
-    padding: 10px;
+    padding: 16px;
 }
 
 .nav_container {
     position: sticky;
+}
+
+.parallax-head {
+    /* The image used */
+    background-image: url("cover-photo.jpg");
+  
+    /* Full height */
+    height: 100vh;
+}
+
+.parallax-section {
+    /* Full height */
+    height: 50vh;
+}
+
+.parallax-1 {
+    /* The image used */
+    background-image: url("parallax1.jpg");
+}
+
+.parallax-2 {
+    /* The image used */
+    background-image: url("parallax2.jpg");
+}
+
+.parallax-3 {
+    /* The image used */
+    background-image: url("parallax3.jpg");
+}
+
+hr {
+    background-color: black;
+    border-top: 1px solid black;
+}
+
+.thumbnail {
+    height: 175px;
+    width: 175px;
+}
+
+.center_img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.mb_imgs {
+    display: none;
+}
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .parallax-section {
+        height: 100vh;
+    }
+    .special_br {
+        display: none;
+    }
+    .sample_imgs {
+        display: none;
+    }
+    .mb_imgs {
+        display: block;
+    }
 }
