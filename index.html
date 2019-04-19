@@ -10,40 +10,34 @@
 </head>
 <body>
     
-    <!-- Visit Shop Button -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-1 col-md-push-11 shop_button">
-                <h4><a class="btn btn-default" href="https://www.etsy.com/shop/BeachLoveDesignsByV" target="_blank">Visit Shop</a></h4>
-            </div>
-        </div>
-    </div>
-    <!-- Visit Shop Button -->
+    
 
     <!-- Parallax Main -->
-    <div class="parallax parallax-head" id="home">
+    <div class="parallax parallax-head scroll_target" id="home">
 
         <!-- Navbar -->
-        <div class="container-fluid nav_container">
-            <div class="row nav_row">
-                <div class="col-md-5 col-md-push-7">
-                    <nav>
-                        <div class="col-md-2">
-                            <a class="active nav_link" href="#home">Home</a>
-                        </div>
-                        <div class="col-md-2">
-                            <a class="nav_link" href="#about">About</a>
-                        </div>
-                        <div class="col-md-2">
-                            <a class="nav_link" href="#samples">Samples</a>
-                        </div>
-                        <div class="col-md-2">
-                            <a class="nav_link" href="#contact">Contact</a>
-                        </div>  
-                    </nav>
-                </div>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid nav_container">
+                <div class="row nav_row">
+                    <div class="col-md-5 col-md-push-7">
+                        <nav>
+                            <div class="col-md-2">
+                                <a class="active nav_link" href="#home">Home</a>
+                            </div>
+                            <div class="col-md-2">
+                                <a class="nav_link" href="#about">About</a>
+                            </div>
+                            <div class="col-md-2">
+                                <a class="nav_link" href="#samples">Samples</a>
+                            </div>
+                            <div class="col-md-2">
+                                <a class="nav_link" href="#contact">Contact</a>
+                            </div>  
+                        </nav>
+                    </div>
+                </div>  
             </div>
-        </div>
+        </nav>
         <!-- Navbar -->
 
         <!-- Title -->
@@ -59,9 +53,12 @@
     </div>
     <!-- Parallax Main -->
 
+    <!-- Visit Shop Button -->
+    <h4><a class="btn btn-default shop_button" href="https://www.etsy.com/shop/BeachLoveDesignsByV" target="_blank">Visit Shop</a></h4>
+    <!-- Visit Shop Button -->
     
     <!-- About Section -->
-    <div class="container-fluid section" id="about">
+    <div class="container-fluid section_about scroll_target" id="about">
 
         <div class="row">
             <div class="col-md-12 text-center">
@@ -128,7 +125,8 @@
                 </p>
             </div>
         </div>
-
+        <br>
+        <br>
     </div>
     <!-- About Section -->
 
@@ -137,7 +135,7 @@
 
 
 
-    <div class="container-fluid section" id="samples">
+    <div class="container-fluid section scroll_target" id="samples">
 
         <div class="row">
             <div class="col-md-12 text-center">
@@ -159,7 +157,7 @@
     <div class="parallax parallax-section parallax-3"></div>
 
 
-    <div class="container-fluid section" id="contact">
+    <div class="container-fluid section scroll_target" id="contact">
 
         <div class="row">
             <div class="col-md-12 text-center">
@@ -180,8 +178,9 @@
 
 
 
-
+   
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
