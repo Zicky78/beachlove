@@ -1,136 +1,135 @@
 @import url('https://fonts.googleapis.com/css?family=Merienda|Raleway');
 
-
-body, html {
-    height: 100%;
+body,
+html {
+	height: 100%;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    position: relative;
+	font-family: 'Raleway', sans-serif;
+	position: relative;
 }
 
-h1, h2, h3, h4, h5, h6, a {
-    font-family: 'Merienda', cursive;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+	font-family: 'Merienda', cursive;
 }
 
 .scroll_target {
-    display: default;
+	display: default;
 }
 
 .section {
-    height: 100vh;
+	height: 100vh;
 }
 
 .section_about {
-    min-height: 100vh;
+	min-height: 100vh;
 }
 
-.parallax {  
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.parallax {
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 h1 {
-      color: #eee;
-      font-size: 48px;
-      font-weight: bold;
+	color: #eee;
+	font-size: 48px;
+	font-weight: bold;
 }
 
 .abs_center {
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      justify-content: center;
-      height: 70vh;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	justify-content: center;
+	height: 70vh;
 }
 
-
-
 .nav_link {
-    color: rgb(39, 138, 252);
-    font-size: 16px;
-    
+	color: white;
+	font-size: 16px;
 }
 
 .active {
-    text-decoration-line: underline;
-    text-decoration-style: double;
-    color: rgb(39, 138, 252);
-    font-size: 16px;
-    font-weight: bold; 
+	text-decoration-line: underline;
+	text-decoration-style: double;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
 }
 
 .nav_row {
-    padding: 16px;
+	padding: 16px;
 }
 
 .nav_container {
-    position: sticky;
+	position: sticky;
 }
 
 .parallax-head {
-    /* The image used */
-    background-image: url("cover-photo.jpg");
-  
-    /* Full height */
-    height: 100vh;
+	/* The image used */
+	background-image: url('cover-photo.jpg');
+
+	/* Full height */
+	height: 100vh;
 }
 
 .parallax-section {
-    /* Full height */
-    height: 50vh;
+	/* Full height */
+	height: 50vh;
 }
 
 .parallax-1 {
-    /* The image used */
-    background-image: url("parallax1.jpg");
+	/* The image used */
+	background-image: url('parallax1.jpg');
 }
 
 .parallax-2 {
-    /* The image used */
-    background-image: url("parallax2.jpg");
+	/* The image used */
+	background-image: url('parallax2.jpg');
 }
 
 .parallax-3 {
-    /* The image used */
-    background-image: url("parallax3.jpg");
+	/* The image used */
+	background-image: url('parallax3.jpg');
 }
 
 hr {
-    background-color: black;
-    border-top: 1px solid black;
+	background-color: black;
+	border-top: 1px solid black;
 }
 
 .shop_button {
-    position: fixed;
-    left: 90vw;
-    top: 90vh;
+	position: fixed;
+	left: 90vw;
+	top: 90vh;
 }
 
 a:hover {
-    color: rgb(65, 195, 255);
+	color: rgb(65, 195, 255);
 }
 
-.navbar, .navbar-default, .navbar-fixed-top {
-    background-color: transparent;
-    border: none;
+.navbar,
+.navbar-default,
+.navbar-fixed-top {
+	background-color: transparent;
+	border: none;
 }
 
 @media only screen and (max-width: 767px) {
-    .parallax-section {
-        height: 100vh;
-    }
-    .special_br {
-        display: none;
-    }
-
-    .shop_button {
-        left: 65vw;
-    } 
+	.parallax-section {
+		height: 100vh;
+	}
+	.special_br {
+		display: none;
+	}
 }
-
