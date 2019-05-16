@@ -16,7 +16,8 @@ h3,
 h4,
 h5,
 h6,
-a {
+a,
+label {
 	font-family: 'Merienda', cursive;
 }
 
@@ -30,6 +31,30 @@ a {
 
 .section_about {
 	min-height: 100vh;
+	background-image: url('parallax-about.jpg');
+}
+
+.section_sample {
+	background: url('parallax-section.jpg');
+}
+
+.section_contact {
+	background: url('parallax-contact.jpg');
+}
+
+.about_container {
+	background-color: rgba(255, 255, 255, 0.801);
+	min-height: 100vh;
+}
+
+.sample_container,
+.contact_container {
+	background-color: rgba(255, 255, 255, 0.801);
+	height: 100%;
+}
+
+#title {
+	text-shadow: 2px 2px 5px black;
 }
 
 .parallax {
@@ -38,6 +63,7 @@ a {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	border: 1px solid white;
 }
 
 h1 {
@@ -54,9 +80,17 @@ h1 {
 	height: 70vh;
 }
 
-.nav_link {
+.navbar-default .navbar-nav > li > a {
 	color: white;
 	font-size: 16px;
+	padding-right: 50px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+	color: #eee;
+	background-color: transparent;
 }
 
 .active {
@@ -73,6 +107,7 @@ h1 {
 
 .nav_container {
 	position: sticky;
+	background-color: rgba(0, 0, 0, 0.356);
 }
 
 .parallax-head {
@@ -109,9 +144,21 @@ hr {
 }
 
 .shop_button {
+	color: black !important;
+}
+
+#shop_container {
+	z-index: 5;
 	position: fixed;
-	left: 90vw;
-	top: 90vh;
+	top: 90%;
+	right: 5%;
+}
+
+.navbar-fixed-bottom {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 25px;
+	padding-bottom: 20px;
 }
 
 a:hover {
@@ -125,11 +172,55 @@ a:hover {
 	border: none;
 }
 
+.img-thumbnail {
+	height: 33.3%;
+	width: 30vh;
+	display: inline;
+	border-radius: 0px;
+}
+
+.pictures {
+	display: flex;
+	justify-content: center;
+}
+.modal-body {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.c_container {
+	display: flex;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.full_c {
+	display: none;
+}
+
+.form-control {
+	border-radius: 6px;
+	border: 1px solid #0a0a0a;
+}
 @media only screen and (max-width: 767px) {
 	.parallax-section {
 		height: 100vh;
 	}
 	.special_br {
 		display: none;
+	}
+	#img_grid {
+		display: none;
+	}
+	.full_c {
+		display: block;
+		height: 75%;
+		display: flex;
+		flex-direction: column;
+
+		justify-content: center;
 	}
 }

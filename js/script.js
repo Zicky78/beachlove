@@ -17,26 +17,26 @@
 		for (i in sections) {
 			console.log('Section:', sections[i]);
 			if (sections[i] <= scrollPosition) {
-				if (sections[i] === 767) {
-					document.querySelectorAll('a').forEach(link => {
-						link.style.color = 'black';
-					});
-				} else if (sections[i] === 0) {
-					document.querySelectorAll('a').forEach(link => {
-						link.style.color = 'white';
-					});
-				} else if (
-					scrollPosition >= 2700 &&
-					scrollPosition <= 3006
-				) {
-					document.querySelectorAll('a').forEach(link => {
-						link.style.color = 'white';
-					});
-				} else {
-					document.querySelectorAll('a').forEach(link => {
-						link.style.color = 'black';
-					});
-				}
+				// if (sections[i] === 767) {
+				// 	document.querySelectorAll('a').forEach(link => {
+				// 		// link.style.color = 'black';
+				// 	});
+				// } else if (sections[i] === 0) {
+				// 	document.querySelectorAll('a').forEach(link => {
+				// 		// link.style.color = 'white';
+				// 	});
+				// } else if (
+				// 	scrollPosition >= 2700 &&
+				// 	scrollPosition <= 3006
+				// ) {
+				// 	document.querySelectorAll('a').forEach(link => {
+				// 		// link.style.color = 'white';
+				// 	});
+				// } else {
+				// 	document.querySelectorAll('a').forEach(link => {
+				// 		// link.style.color = 'black';
+				// 	});
+				// }
 				document
 					.querySelector('.active')
 					.setAttribute('class', 'nav_link');
